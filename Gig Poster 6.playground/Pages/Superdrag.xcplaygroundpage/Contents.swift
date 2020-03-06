@@ -49,11 +49,24 @@ let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 canvas.fillColor = lightBlue
 canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 
-canvas.borderColor = offWhite
-canvas.defaultBorderWidth = 20
-canvas.drawEllipse(at: Point(x: 200, y: 400), width: 380, height: 380)
 
 
+for x in stride(from: 0, through: 400, by: 400/8){
+    
+    canvas.drawEllipse(at: Point(x: 200, y: 400), width: Int(x), height: Int(x), borderWidth: 12)
+}
+   
+        
+    canvas.drawText(message: "superdrag", at: Point(x: 15, y:100), size: 50)
+   
+    
+
+   
+
+
+
+
+    
 /*:
  ## Use Source Control
  
@@ -67,5 +80,6 @@ canvas.drawEllipse(at: Point(x: 200, y: 400), width: 380, height: 380)
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
 PlaygroundPage.current.liveView = canvas
+
 
 
