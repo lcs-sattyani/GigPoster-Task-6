@@ -62,7 +62,7 @@ for x in stride(from: 0, through: 400, by: 400/8){
     canvas.drawText(message: "superdrag", at: Point(x: 15, y:100), size: 50)
    
     
-
+canvas.drawText(message: "with", at: Point(x: 15, y:100), size: 50)
    
 
 
