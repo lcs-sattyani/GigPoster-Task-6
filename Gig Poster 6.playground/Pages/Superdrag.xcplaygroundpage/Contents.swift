@@ -54,6 +54,8 @@ canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 for x in stride(from: 0, through: 400, by: 400/8){
     
     canvas.drawEllipse(at: Point(x: 200, y: 400), width: Int(x), height: Int(x), borderWidth: 12)
+    
+    canvas.drawEllipse(at: Point(x: x + 5, y: 400), width: Int(x), height: Int(x), borderWidth: 12)
 }
    
         
